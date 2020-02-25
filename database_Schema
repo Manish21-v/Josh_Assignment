@@ -1,0 +1,38 @@
+DATA Bases Schema for etour website
+
+
+customer table
+1) customer_id int
+2) customer_name varchar
+3) customer_email varchar
+4) packageid int
+
+Package Table
+1)packageid int
+2)packagedate date
+3)packageprice int
+4)customerid int
+
+Booking Table
+1) bookingid int
+2) packageid int
+3) customerid int
+4) bookingdate date
+
+Iternary Table
+1)Iternaryid int
+2)packageid int
+3)description text
+4)iternarydate date
+
+category Table
+1)catid int
+2)subid int
+3)cattype varchar
+4)catsubtype varchar
+5)catlocation varchar
+
+Date Table
+1)Dateid
+2)Packageid
+
