@@ -3,12 +3,14 @@
 ****************************************************************************************
 
 
-1) git status : use to see the status of all your changes made to the files.
-2) git clone : use to clone a repository to your local machine from the server.
-3) git add : use to save the the changes made to a file and put the file into stage.
-4) git commit : use to commit all the files on your local machine.
-5) git push : use to upload your file to the server from your local machine .
-6) git diff : use to see what all changes has been done inside the files . 
+1) git  status : use to see the status of all your changes made to the files.
+2) git  clone : use to clone a repository to your local machine from the server.
+3) git  add : use to save the the changes made to a file and put the file into stage.
+4) git  commit : use to commit all the files on your local machine.
+5) git  push : use to upload your file to the server from your local machine .
+6) git  diff : use to see what all changes has been done inside the files . 
 7) git show : shows you the code of most recent commit .
-8) git pull : pulls all the files from server to your local machine .
-9) git merge : merges all the codes from one branch to another .
+8) git  pull : pulls all the files from server to your local machine .
+9) git  merge : merges all the codes from one branch to another .
+10) git init : initailize a git repositiry .
+
