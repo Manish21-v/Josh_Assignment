@@ -24,6 +24,7 @@ Iternary Table
 2)packageid int
 3)description text
 4)iternarydate date
+5)Dateid
 
 category Table
 1)catid int
