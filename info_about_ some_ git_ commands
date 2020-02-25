@@ -1,0 +1,25 @@
+Git Revert :
+it reverts the state of the file to your particular commit mention by you.
+eg. git revert Head~2
+ git revert, which undoes the changes made by a previous commit by creating an entirely new commit, all without altering the history of commits.
+
+it is better to use git revert if you have not push your commited data to the server repository.
+
+Git Reset :
+
+it is mostly used to unstaged your file from staging state.
+it rewrites the entire commit again.
+
+
+
+Git Cherry-pick : 
+it is use to get a code from a partcular commit .
+
+Git rebase :
+
+it collabrorate your feature branch with the master branch ,and it keeps the commits of the feature branch intack so that in future you can refer ot any of the commits ,it eliminates the unnecessary merge commits required by git merge.
+
+Git Merge : 
+it merges the data of the feature branch with the master branch and vice-versa .
+but it overwrites the merge commits of the feature branch with the master branch commmits.
+
