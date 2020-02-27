@@ -1,3 +1,28 @@
+class Library
+  #Array of books availble in the library
+  @@bookarray = []
+
+  begin
+    
+  puts "***********Welcome to vidya Library***********"
+    
+  end
+  
+  #adds the new book in the library
+  def addbook(obj)
+    @@bookarray.push(obj)
+  end
+
+ 
+  def showbooks
+    @@bookarray.each do |item|
+      puts " bookid : #{item.bookid} \n book_name: #{item.bookname}"
+    end   
+  end
+
+end
+
+
 class Book
   #getter setter for all the properties of Book 
     attr_accessor :bookname ,:bookid, :issuedate , :returningdate
@@ -13,28 +38,25 @@ class Book
       
     end
 
-    #Shows all the available books in the library
-    def getdetail
-      @@bookarray.each do |item|
-      puts " bookname : #{item.bookid} \n book_id : #{item.bookname}"
-      end
-    end
-
-    #adds the new book in the library
-    def addbook
-      @@bookarray.push(self)
-    end
-
 end
+
+#Creating a new book for library
 bobj=Book.new()
 bobj.bookid = 1
 bobj.bookname = "Mahabharat"
-bobj.addbook
+
+#Creating another new book for library
 bobj2=Book.new()
 bobj2.bookid = 2
 bobj2.bookname = "Ramayan"
-bobj2.addbook
-bobj.getdetail
+
+#Adding the new books to the library
+lobj=Library.new()
+lobj.addbook(bobj)
+lobj.addbook(bobj2)
+#Display all the book in yhe library
+lobj.showbooks()
+
 
 
 
@@ -57,7 +79,7 @@ class Member
       books.bookname = bookname
       books.issuedate = issuedate
       books.returningdate = returningdate
-      puts no_of_books.class
+     # puts no_of_books.class
       self.no_of_books.push(books)
     end
     
