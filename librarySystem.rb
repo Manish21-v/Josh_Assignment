@@ -16,7 +16,7 @@ class Book
     #Shows all the available books in the library
     def getdetail
       @@bookarray.each do |item|
-      puts " bookname : #{item.bookid} \n book_id : #{item.bookname}"
+      puts " bookid : #{item.bookid} \n book_name: #{item.bookname}"
       end
     end
 
